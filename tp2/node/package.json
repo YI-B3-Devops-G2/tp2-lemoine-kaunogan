@@ -1,0 +1,21 @@
+{
+  "name": "tp_docker",
+  "version": "1.0.",
+  "main": "index.js",
+  "repository": "git@github.com:YI-B3-Devops/tp2-lemoine-kaunogan.git",
+  "author": "KaunoganLemoine <kaunogan.lemoine@ynov.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "compose": "docker-compose -f Docker/docker-compose.yml up --build"
+
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "pg": "^7.14.0",
+    "redis": "^2.8.0"
+  }
+}
