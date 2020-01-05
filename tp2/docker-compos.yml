@@ -8,13 +8,13 @@ services:
     container_name: app
     environment:
       - NODE_ENV=production
-      - PORT=3000
+      - PORT=2222
       - DB_USER=admin
       - DB_PASSWORD=azertyuiop01
       - DB_NAME=test
       - DB_HOST=devops_tp_postgres
     ports:
-    - 3000:3000
+    - 2222:2222
     depends_on:
       - postgres
     networks:
@@ -25,7 +25,7 @@ services:
     container_name: devops_tp_postgres
     environment:
       POSTGRES_USER: admin
-      POSTGRES_PASSWORD: azertyuiop01
+      POSTGRES_PASSWORD: azerty
       POSTGRES_DB: test
       PGDATA: /data/postgres
     restart: unless-stopped
